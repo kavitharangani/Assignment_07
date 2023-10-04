@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML,POS System,kavindya">
+    <meta name="description" content="My personal idea">
+    <meta name="revised" content="Home page, 12/09/2023">
+    <meta name="author" content="Kavindya Tharangani">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Home Form</title>
+    <link href="E-Marker-Shop/CSS/header.css" rel="stylesheet">
+    <link href="E-Marker-Shop/CSS/header%20other.css" rel="stylesheet">
+    <link href="E-Marker-Shop/CSS/home.css" rel="stylesheet">
+    <!--    <link href="E-Marker-Shop/CSS/customer.css" rel="stylesheet">-->
+    <!--    <link href="E-Marker-Shop/CSS/item.css" rel="stylesheet">-->
+    <!--    <link href="E-Marker-Shop/CSS/order.css" rel="stylesheet">-->
+    <link href="E-Marker-Shop/assets/css/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="E-Marker-Shop/assets/bootstrap/css/bootstrap.min.css">
+
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <img src="E-Marker-Shop/assets/img/Home%20icon.png" alt="">
+            <a class="navbar-brand" href="index.html" id="home-nav">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <img src="E-Marker-Shop/assets/img/customer%20icon.png" alt="" class="cus">
+                    <a class="nav-link active" aria-current="page" href="E-Marker-Shop/HTML/Customer_Section.html" id="customer-nav">Customer</a>
+
+                    <img src="E-Marker-Shop/assets/img/item%20icon.png" alt="" class="item">
+                    <a class="nav-link active" aria-current="page" href="E-Marker-Shop/HTML/Item_Section.html" id="item-nav">Item</a>
+
+                    <img src="E-Marker-Shop/assets/img/order%20icon.png" alt="" class="order">
+                    <a class="nav-link active" aria-current="page" href="E-Marker-Shop/HTML/Order_Section.html" id="order-nav">Order</a>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!--Menu Section -->
+<section id="menu-section">
+    <div class="left_container">
+        <div class="left_container_inner">
+            <div id="title">
+                E-Mark
+                <p style="font-size: 20px;letter-spacing: 14px ">Go Mother With Onlinebuying.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="btnList row">
+            <div class="cus-col col-sm-12 col-md-4 col-lg-4 col-xl-4" href="E-Marker-Shop/HTML/Customer_Section.html">
+                <div>
+                    Customer
+                    <img alt="customer" src="E-Marker-Shop/assets/img/customer.jpg" width="200">
+                </div>
+            </div>
+            <div class="cus-col col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <div>
+                    Item
+                    <img alt="item" src="E-Marker-Shop/assets/img/item.jpg" width="120">
+                </div>
+            </div>
+            <div class="cus-col col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <div>
+                    Order
+                    <img alt="order" src="E-Marker-Shop/assets/img/orders.jpg" width="120">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!--Customer Section -->
+<section class="content-section" id="manage_customer">
+    <h1 class="main">
+        Customer Manage <i class='bx bx-user-plus'></i>
+    </h1>
+    <hr style="color: black; border: 1px solid black; width: 100%">
+
+    <div class="row">
+        <h1 class="title" style="font-size: 30px ; font-style: italic">
+            Add Form Customer <i class='bx bx-user-plus'></i>
+        </h1>
+        <hr style="color: black; border: 1px solid black; width: 100% ">
+
+        <div class="col col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" id="data">
+            <br>
+            <div class="col-md-4">
+                <label for="customer_Id" class="form-label">Customer ID</label>
+                <input type="text" class="form-control" id="customer_Id" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="customer_Name" class="form-label">Customer Name</label>
+                <input type="text" class="form-control" id="customer_Name" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="customer_Address" class="form-label">Customer Address</label>
+                <input type="text" class="form-control" id="customer_Address" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="customer_Contact" class="form-label">Customer Contact</label>
+                <input type="text" class="form-control" id="customer_Contact" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="mt-5">
+                <button type="submit" class="btn btn-success" id="submit">Submit</button>
+                <button type="button" class="btn btn-primary" id="update">Update</button>
+                <button type="button" class="btn btn-danger" id="remove">Delete</button>
+                <button type="button" class="btn btn-warning" id="reset">Reset</button>
+            </div>
+            <br><br>
+
+        </div>
+        <div class="col col-xl-6 col-lg-6  col-md-6 col-sm-12 col-12" id="tabel">
+            <table class="table mt-5" border="5px">
+                <br><br>
+                <div class="search_section">
+                    <button class="btn btn-primary clear" id="search">search</button>
+                    <br>
+                    <input class="form-control" id="search_Customer" name='search' placeholder="C001"
+                           required type="text">
+                    <br></div>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Address</th>
+                        <th scope="col">Contact</th>
+                    </tr>
+                    </thead>
+                    <tbody class="table-group-divider" id="student_table_body">
+
+                    <tr>
+                        <td scope="row">C001</td>
+                        <td>Kavi</td>
+                        <td>Kurunegala</td>
+                        <td>0714741714</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- Item Section-->
+<section class="content-section" id="manage_item">
+    <h1 class="main">
+        Item Manage <i class='bx bx-user-plus'></i>
+    </h1>
+    <hr style="color: black; border: 1px solid black; width: 100%">
+
+    <div class="row">
+        <h1 class="title" style="font-size: 30px ; font-style: italic">
+            Add Form Item <i class='bx bx-user-plus'></i>
+        </h1>
+        <hr style="color: black; border: 1px solid black; width: 100% ">
+
+        <div class="col col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" id="data1">
+            <br>
+            <div class="col-md-4">
+                <label for="item_Code" class="form-label" >Item Code</label>
+                <input type="text" class="form-control" id="item_Code" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="item_Name" class="form-label">Item Name</label>
+                <input type="text" class="form-control" id="item_Name" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="item_Price" class="form-label">Item Price</label>
+                <input type="text" class="form-control" id="item_Price" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="qty" class="form-label">Item Qty On Hand</label>
+                <input type="text" class="form-control" id="qty" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="mt-5">
+                <button type="submit" class="btn btn-success" id="submit1">Submit</button>
+                <button type="button" class="btn btn-primary" id="update1">Update</button>
+                <button type="button" class="btn btn-danger" id="remove1">Delete</button>
+                <button type="button" class="btn btn-warning" id="reset1">Reset</button>
+            </div>
+
+            <br><br>
+        </div>
+        <div class="col col-xl-6 col-lg-6  col-md-6 col-sm-12 col-12" id="tabel1">
+            <table class="table mt-5" border="5px">
+                <br><br>
+                <div class="search_section">
+                    <button class="btn btn-primary clear" id="search1">search</button>
+                    <br>
+                    <input class="form-control" id="search_item" name='search' placeholder="I001"
+                           required type="text">
+                    <br>
+                </div>
+                <thead>
+                <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">price</th>
+                    <th scope="col">qty</th>
+                </tr>
+                </thead>
+                <tbody class="table-group-divider" id="item_table_body">
+                <tr>
+                    <td scope="row">I001</td>
+                    <td>Soap</td>
+                    <td>580</td>
+                    <td>2</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- Order Section-->
+<section class="content-section" id="manage_order">
+    <h1 class="title">
+        Place Order <i class='bx bx-cookie'></i>
+    </h1>
+    <hr style="color: white; border: 1px solid black; width: 100%">
+    <section id="section">
+        <div class="container" id="order_container">
+            <div id="orders_left_container">
+                <h1 >New Order</h1>
+                <hr style="color: black; border: 1px solid black; width: 100% ">
+                <br>
+                <form>
+                    <div class="form-group">
+                        <label for="txt_order_id">Order ID</label><br><br>
+                        <input class="form-control" id="txt_order_id" name='order_id' placeholder="O001" required
+                               type="text"><br>
+                    </div>
+                    <div class="form-group">
+                        <label for="cmbCustomers">Customer ID</label><br><br>
+                        <select class="form-control" id="cmbCustomers">
+                        </select>
+                        <br>
+                    </div>
+                    <div class="form-group">
+                        <label for="customer_name">Name </label><br><br>
+                        <h3 class=" " id="customer_name1">
+                            kavi
+                        </h3>
+                    </div>
+                    <br><br>
+                    <div class="btn">
+                        <button type="submit" class="btn btn-success">Save</button>
+                        <button type="button" class="btn btn-primary">Update</button>
+                        <button type="button" class="btn btn-danger">Delete</button>
+                        <button type="reset" class="btn btn-warning">Clear</button>
+                    </div>
+                    <img src="E-Marker-Shop/assets/img/orders.jpg" alt="" width="50px" >
+                </form>
+            </div>
+            <div id="orders_right_container">
+                <h5>Date : <span id="date">2023-07-01</span></h5>
+                <br><br>
+                <div id="right_container_top">
+                    <form>
+                        <div class="form-group">
+                            <label for="i_description">Item</label>
+                            <h4 class="form-control" id="i_item"
+                                type="text">-</h4>
+                        </div>
+                        <div class="form-group">
+                            <label for="i_description">Description</label>
+                            <h4 class="form-control" id="i_description"
+                                type="text">-</h4>
+                        </div>
+                        <div class="form-group">
+                            <label for="i_price">Unit Price</label>
+                            <h4 class="form-control" id="i_price"
+                                type="text">-</h4>
+                        </div>
+                        <div class="form-group">
+                            <label for="i_qtyOnHand">Qty on hand</label>
+                            <h4 class="form-control" id="i_qtyOnHand"
+                                type="text">-</h4>
+                        </div>
+
+                    </form>
+                    <div id="addcart">
+                        <div class="form-group">
+                            <div style="width: 30%;">
+                                <input class="form-control" id="qty1"
+                                       placeholder="enter qty" required type="number">
+                            </div>
+                            <div class="form-group" id="side">
+                                <button class="btn btn-primary" id="btn_addtocart">Cart</button>
+                                <button class="btn btn-primary" id="btn_remove">Remove</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="right_container_bottom">
+                    <table class="table table-hover" id="cart">
+                        <thead>
+                        <br>
+                        <tr>
+                            <th class="order-item-code" scope="col">Item Code</th>
+                            <th class="order-item-description" scope="col">Description</th>
+                            <th class="order-item-qty" scope="col">Qty</th>
+                            <th class="order-item-price" scope="col">Price</th>
+                            <th class="order-item-total" scope="col">Total</th>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>Japan</td>
+                            <td>GDSE</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>Australia</td>
+                            <td>DEP</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td >Larry </td>
+                            <td >Bird </td>
+                            <td>Italic</td>
+                            <td>GDSE</td>
+                        </tr>
+                        </thead>
+                        <tbody id="cart_body">
+                        </tbody>
+                    </table>
+                </div>
+                <br>
+                <div class="btns">
+                    <h2 id="total">Total:Rs&nbsp;<span id="total_price">0.00</span></h2>
+                    <button class="btn btn-primary" id="btn_place_order">Place Order</button>
+                </div>
+                <br><br>
+            </div>
+        </div>
+    </section>
+</section>
+
+<script src="E-Marker-Shop/assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="E-Marker-Shop/assets/lib/jquery.min.js"></script>
+
+
+<script>
+
+    // $('#menu-section').css('display','none')
+
+    $('#customer-nav').on('click',()=>{
+        $('#manage_customer').css('display','block')
+        $('#menu-section').css('display','none')
+        $('#item-nav').css('display','none')
+        $('#order-nav').css('display','none')
+    })
+
+    $('#item-nav').on('click',()=>{
+        $('#manage_customer').css('display','none')
+        $('#item-nav').css('display','block')
+        $('#order-nav').css('display','none')
+    })
+
+
+    //submit
+    $("#submit").on('click', ()=>{
+        let customerId =$('#customer_Id').val();
+        let customerName=$('#customer_Name').val();
+        let customerAddress=$('#customer_Address').val();
+        let customerContact=$('#customer_Contact').val();
+
+        console.log('Customer ID: ' + customerId);
+        console.log('Customer Name: ' + customerName);
+        console.log('Customer Address: ' + customerAddress);
+        console.log('Customer Contact: ' + customerContact);
+
+
+        var newRow = $("<tr>");
+
+        newRow.append("<td>" + customerId + "</td>");
+        newRow.append("<td>" + customerName + "</td>");
+        newRow.append("<td>" + customerAddress + "</td>");
+        newRow.append("<td>" + customerContact + "</td>");
+
+        $("#student_table_body").append(newRow);
+
+    })
+
+    // update
+    $("#update").on('click', ()=>{
+        let customerId =$('#customer_Id').val();
+        let customerName=$('#customer_Name').val();
+        let customerAddress=$('#customer_Address').val();
+        let customerContact=$('#customer_Contact').val();
+
+        let record = `<td class="Customer ID:">${customerId}</td><td class="Customer Name:">${customerName}</td> <td class="Customer Address:">${customerAddress}</td><td class="Customer Contact:">${customerContact}</td>`;
+
+        $("tbody>tr").eq(row_index).html(record)
+    })
+
+
+    //Delete
+    $("#remove").on('click', () => {
+
+        $("tbody>tr").eq(row_index).remove();
+    })
+
+
+    //reset
+    $("#reset").on('click', () => {
+        // my code
+        $('#customer_Id').val('');
+        $('#customer_Name').val('');
+        $('#customer_Address').val('');
+        $('#customer_Contact').val('');
+
+    })
+
+
+    //search
+    $("#search").on('click', () => {
+        let customerId = $('#customer_Id').val();
+
+        $("tbody>tr").each(function () {
+            let row = $(this);
+            let currentCustomerId = row.find(".customer-id").text();
+
+            if (currentCustomerId === customerId) {
+                let customerName = row.find(".customer-name").text();
+                let customerAddress = row.find(".customer-address").text();
+                let customerContact = row.find(".customer-contact").text();
+
+                $('#customer_Name').val(customerName);
+                $('#customer_Address').val(customerAddress);
+                $('#customer_Contact').val(customerContact);
+
+                return true;
+            }
+        });
+    });
+
+
+
+    // $("#search").on('click', "tr", function (){
+    //     let customerId = $("#search-input").val();
+    //
+    //     $('#customer_Id').val(customerId);
+    //
+    //     // let customerId = $(this).find("td:eq(0)").text();
+    //     let customerName = $(this).find("td:eq(1)").text();
+    //     let customerAddress = $(this).find("td:eq(2)").text();
+    //     let customerContact = $(this).find("td:eq(3)").text();
+    //
+    //     $('#customer_Id').val(customerId);
+    //     $('#customer_Name').val(customerName);
+    //     $('#customer_Address').val(customerAddress);
+    //     $('#customer_Contact').val(customerContact);
+    // })
+
+
+    // $("#search-button").click(function() {
+    //     // Get the customer ID from the input field
+    //     let customerId = $("#search-input").val();
+    //     $('#customer_Id').val(customerId);
+    //     // Simulate a customer search (replace with your actual search logic)
+    //     // For demonstration, we'll assume a static data object
+    //     // Update the text fields with the search results
+    //     $('#customer_Id').val(customerId);
+    //     $('#customer_Name').val(customerName);
+    //     $('#customer_Address').val(customerAddress);
+    //     $('#customer_Contact').val(customerContact);
+    //
+    //     // Show the customer details container
+    //     $(".customer-details").show();
+    // });
+
+
+    //click
+    $("tbody").on("click", "tr", function () {
+        row_index =$(this).index();
+
+        let customerId = $(this).find("td:eq(0)").text();
+        let customerName = $(this).find("td:eq(1)").text();
+        let customerAddress = $(this).find("td:eq(2)").text();
+        let customerContact = $(this).find("td:eq(3)").text();
+
+        $('#customer_Id').val(customerId);
+        $('#customer_Name').val(customerName);
+        $('#customer_Address').val(customerAddress);
+        $('#customer_Contact').val(customerContact);
+    });
+
+
+</script>
+
+</body>
+</html>
