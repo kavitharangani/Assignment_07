@@ -18,7 +18,7 @@ body{
     display: flex;
 }
 
-#data{
+#data1{
     position: relative;
     box-shadow: -1px 1px 60px 10px black;
     border-radius: 20px;
@@ -32,7 +32,7 @@ body{
 
 }
 
-#tabel{
+#tabel1{
     position: relative;
     box-shadow: -1px 1px 60px 10px black;
     border-radius: 20px;

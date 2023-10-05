@@ -1,184 +1,184 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="keywords" content="HTML,POS System,kavindya">
-    <meta name="description" content="My personal idea">
-    <meta name="revised" content="Order page, 12/09/2023">
-    <meta name="author" content="Kavindya Tharangani">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Order Form</title>
-    <link href="../CSS/order.css" rel="stylesheet">
-    <link href="../CSS/header other.css" rel="stylesheet">
-    <link href="../CSS/header.css" rel="stylesheet">
-    <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
-</head>
-<body>
-<header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <img src="../assets/img/Home%20icon.png" alt="">
-            <a class="navbar-brand" href="../../index.html">Home</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <img src="../assets/img/customer%20icon.png" alt="" class="cus">
-                    <a class="nav-link active" aria-current="page" href="Customer_Section.html">Customer</a>
-
-                    <img src="../assets/img/item%20icon.png" alt="" class="item">
-                    <a class="nav-link active" aria-current="page" href="Item_Section.html">Item</a>
-
-                    <img src="../assets/img/order%20icon.png" alt="" class="order">
-                    <a class="nav-link active" aria-current="page" href="Order_Section.html">Order</a>
-
-                </div>
-            </div>
-        </div>
-    </nav>
-</header>
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="keywords" content="HTML,POS System,kavindya">-->
+<!--    <meta name="description" content="My personal idea">-->
+<!--    <meta name="revised" content="Order page, 12/09/2023">-->
+<!--    <meta name="author" content="Kavindya Tharangani">-->
+<!--    <meta name="viewport" content="width=device-width,initial-scale=1.0">-->
+<!--    <title>Order Form</title>-->
+<!--    <link href="../CSS/order.css" rel="stylesheet">-->
+<!--    <link href="../CSS/header other.css" rel="stylesheet">-->
+<!--    <link href="../CSS/header.css" rel="stylesheet">-->
+<!--    <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>-->
+<!--</head>-->
+<!--<body>-->
 <!--<header>-->
-<!--    <img id="cartimg" src="../assets/img/home.png" alt="logo">-->
-<!--    <nav>-->
-<!--        <ol>-->
-<!--            <li><img src="../assets/img/Home%20icon.png" alt=""><button><a href="../../index.html">Home</a></button></li>-->
-<!--            <li><img src="../assets/img/customer%20icon.png" alt=""><button><a href="Customer_Section.html">Customer</a></button></li>-->
-<!--            <li><img src="../assets/img/item%20icon.png" alt=""><button><a href="Item_Section.html">Item</a></button></li>-->
-<!--            <li><img src="../assets/img/order%20icon.png" alt=""><button><a href="Order_Section.html">Order</a></button></li>-->
+<!--    <nav class="navbar navbar-expand-lg bg-body-tertiary">-->
+<!--        <div class="container-fluid">-->
+<!--            <img src="../assets/img/Home%20icon.png" alt="">-->
+<!--            <a class="navbar-brand" href="../../index.html">Home</a>-->
+<!--            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">-->
+<!--                <span class="navbar-toggler-icon"></span>-->
+<!--            </button>-->
+<!--            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">-->
+<!--                <div class="navbar-nav">-->
+<!--                    <img src="../assets/img/customer%20icon.png" alt="" class="cus">-->
+<!--                    <a class="nav-link active" aria-current="page" href="Customer_Section.html">Customer</a>-->
 
+<!--                    <img src="../assets/img/item%20icon.png" alt="" class="item">-->
+<!--                    <a class="nav-link active" aria-current="page" href="Item_Section.html">Item</a>-->
 
-<!--        </ol>-->
+<!--                    <img src="../assets/img/order%20icon.png" alt="" class="order">-->
+<!--                    <a class="nav-link active" aria-current="page" href="Order_Section.html">Order</a>-->
+
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
 <!--    </nav>-->
 <!--</header>-->
-<br>
-<section class="content-section" id="manage_order">
-    <h1 class="title">
-        Place Order <i class='bx bx-cookie'></i>
-    </h1>
-    <hr style="color: white; border: 1px solid black; width: 100%">
-    <section id="section">
-    <div class="container" id="order_container">
-        <div id="orders_left_container">
-            <h1 >New Order</h1>
-            <hr style="color: black; border: 1px solid black; width: 100% ">
-            <br>
-            <form>
-                <div class="form-group">
-                    <label for="txt_order_id">Order ID</label><br><br>
-                    <input class="form-control" id="txt_order_id" name='order_id' placeholder="O001" required
-                           type="text"><br>
-                </div>
-                <div class="form-group">
-                    <label for="cmbCustomers">Customer ID</label><br><br>
-                    <select class="form-control" id="cmbCustomers">
-                    </select>
-                    <br>
-                </div>
-                <div class="form-group">
-                    <label for="customer_name">Name </label><br><br>
-                    <h3 class=" " id="customer_name">
-                        kavi
-                    </h3>
-                </div>
-                <br><br>
-                <div class="btn">
-                    <button type="submit" class="btn btn-success">Save</button>
-                    <button type="button" class="btn btn-primary">Update</button>
-                    <button type="button" class="btn btn-danger">Delete</button>
-                    <button type="reset" class="btn btn-warning">Clear</button>
-                </div>
-                <img src="../assets/img/orders.jpg" alt="" width="50px" >
-            </form>
-        </div>
-        <div id="orders_right_container">
-            <h5>Date : <span id="date">2023-07-01</span></h5>
-            <br><br>
-            <div id="right_container_top">
-                <form>
-                    <div class="form-group">
-                        <label for="i_description">Item</label>
-                        <h4 class="form-control" id="i_item"
-                            type="text">-</h4>
-                    </div>
-                    <div class="form-group">
-                        <label for="i_description">Description</label>
-                        <h4 class="form-control" id="i_description"
-                            type="text">-</h4>
-                    </div>
-                    <div class="form-group">
-                        <label for="i_price">Unit Price</label>
-                        <h4 class="form-control" id="i_price"
-                            type="text">-</h4>
-                    </div>
-                    <div class="form-group">
-                        <label for="i_qtyOnHand">Qty on hand</label>
-                        <h4 class="form-control" id="i_qtyOnHand"
-                            type="text">-</h4>
-                    </div>
+<!--&lt;!&ndash;<header>&ndash;&gt;-->
+<!--&lt;!&ndash;    <img id="cartimg" src="../assets/img/home.png" alt="logo">&ndash;&gt;-->
+<!--&lt;!&ndash;    <nav>&ndash;&gt;-->
+<!--&lt;!&ndash;        <ol>&ndash;&gt;-->
+<!--&lt;!&ndash;            <li><img src="../assets/img/Home%20icon.png" alt=""><button><a href="../../index.html">Home</a></button></li>&ndash;&gt;-->
+<!--&lt;!&ndash;            <li><img src="../assets/img/customer%20icon.png" alt=""><button><a href="Customer_Section.html">Customer</a></button></li>&ndash;&gt;-->
+<!--&lt;!&ndash;            <li><img src="../assets/img/item%20icon.png" alt=""><button><a href="Item_Section.html">Item</a></button></li>&ndash;&gt;-->
+<!--&lt;!&ndash;            <li><img src="../assets/img/order%20icon.png" alt=""><button><a href="Order_Section.html">Order</a></button></li>&ndash;&gt;-->
 
-                </form>
-                <div id="addcart">
-                    <div class="form-group">
-                        <div style="width: 30%;">
-                            <input class="form-control" id="qty"
-                                   placeholder="enter qty" required type="number">
-                        </div>
-                        <div class="form-group" id="side">
-                            <button class="btn btn-primary" id="btn_addtocart">Cart</button>
-                            <button class="btn btn-primary" id="btn_remove">Remove</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="right_container_bottom">
-                <table class="table table-hover" id="cart">
-                    <thead>
-                    <br>
-                    <tr>
-                        <th class="order-item-code" scope="col">Item Code</th>
-                        <th class="order-item-description" scope="col">Description</th>
-                        <th class="order-item-qty" scope="col">Qty</th>
-                        <th class="order-item-price" scope="col">Price</th>
-                        <th class="order-item-total" scope="col">Total</th>
-                    </tr>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>Japan</td>
-                        <td>GDSE</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>Australia</td>
-                        <td>DEP</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td >Larry </td>
-                        <td >Bird </td>
-                        <td>Italic</td>
-                        <td>GDSE</td>
-                    </tr>
-                    </thead>
-                    <tbody id="cart_body">
-                    </tbody>
-                </table>
-            </div>
-            <br>
-            <div class="btns">
-                <h2 id="total">Total:Rs&nbsp;<span id="total_price">0.00</span></h2>
-                <button class="btn btn-primary" id="btn_place_order">Place Order</button>
-            </div>
-            <br><br>
-        </div>
-    </div>
-</section>
-</section>
-<script src="../assets/bootstrap/js/bootstrap.min.js"></script>
 
-</body>
-</html>
+<!--&lt;!&ndash;        </ol>&ndash;&gt;-->
+<!--&lt;!&ndash;    </nav>&ndash;&gt;-->
+<!--&lt;!&ndash;</header>&ndash;&gt;-->
+<!--<br>-->
+<!--<section class="content-section" id="manage_order">-->
+<!--    <h1 class="title">-->
+<!--        Place Order <i class='bx bx-cookie'></i>-->
+<!--    </h1>-->
+<!--    <hr style="color: white; border: 1px solid black; width: 100%">-->
+<!--    <section id="section">-->
+<!--    <div class="container" id="order_container">-->
+<!--        <div id="orders_left_container">-->
+<!--            <h1 >New Order</h1>-->
+<!--            <hr style="color: black; border: 1px solid black; width: 100% ">-->
+<!--            <br>-->
+<!--            <form>-->
+<!--                <div class="form-group">-->
+<!--                    <label for="txt_order_id">Order ID</label><br><br>-->
+<!--                    <input class="form-control" id="txt_order_id" name='order_id' placeholder="O001" required-->
+<!--                           type="text"><br>-->
+<!--                </div>-->
+<!--                <div class="form-group">-->
+<!--                    <label for="cmbCustomers">Customer ID</label><br><br>-->
+<!--                    <select class="form-control" id="cmbCustomers">-->
+<!--                    </select>-->
+<!--                    <br>-->
+<!--                </div>-->
+<!--                <div class="form-group">-->
+<!--                    <label for="customer_name">Name </label><br><br>-->
+<!--                    <h3 class=" " id="customer_name">-->
+<!--                        kavi-->
+<!--                    </h3>-->
+<!--                </div>-->
+<!--                <br><br>-->
+<!--                <div class="btn">-->
+<!--                    <button type="submit" class="btn btn-success">Save</button>-->
+<!--                    <button type="button" class="btn btn-primary">Update</button>-->
+<!--                    <button type="button" class="btn btn-danger">Delete</button>-->
+<!--                    <button type="reset" class="btn btn-warning">Clear</button>-->
+<!--                </div>-->
+<!--                <img src="../assets/img/orders.jpg" alt="" width="50px" >-->
+<!--            </form>-->
+<!--        </div>-->
+<!--        <div id="orders_right_container">-->
+<!--            <h5>Date : <span id="date">2023-07-01</span></h5>-->
+<!--            <br><br>-->
+<!--            <div id="right_container_top">-->
+<!--                <form>-->
+<!--                    <div class="form-group">-->
+<!--                        <label for="i_description">Item</label>-->
+<!--                        <h4 class="form-control" id="i_item"-->
+<!--                            type="text">-</h4>-->
+<!--                    </div>-->
+<!--                    <div class="form-group">-->
+<!--                        <label for="i_description">Description</label>-->
+<!--                        <h4 class="form-control" id="i_description"-->
+<!--                            type="text">-</h4>-->
+<!--                    </div>-->
+<!--                    <div class="form-group">-->
+<!--                        <label for="i_price">Unit Price</label>-->
+<!--                        <h4 class="form-control" id="i_price"-->
+<!--                            type="text">-</h4>-->
+<!--                    </div>-->
+<!--                    <div class="form-group">-->
+<!--                        <label for="i_qtyOnHand">Qty on hand</label>-->
+<!--                        <h4 class="form-control" id="i_qtyOnHand"-->
+<!--                            type="text">-</h4>-->
+<!--                    </div>-->
+
+<!--                </form>-->
+<!--                <div id="addcart">-->
+<!--                    <div class="form-group">-->
+<!--                        <div style="width: 30%;">-->
+<!--                            <input class="form-control" id="qty"-->
+<!--                                   placeholder="enter qty" required type="number">-->
+<!--                        </div>-->
+<!--                        <div class="form-group" id="side">-->
+<!--                            <button class="btn btn-primary" id="btn_addtocart">Cart</button>-->
+<!--                            <button class="btn btn-primary" id="btn_remove">Remove</button>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div id="right_container_bottom">-->
+<!--                <table class="table table-hover" id="cart">-->
+<!--                    <thead>-->
+<!--                    <br>-->
+<!--                    <tr>-->
+<!--                        <th class="order-item-code" scope="col">Item Code</th>-->
+<!--                        <th class="order-item-description" scope="col">Description</th>-->
+<!--                        <th class="order-item-qty" scope="col">Qty</th>-->
+<!--                        <th class="order-item-price" scope="col">Price</th>-->
+<!--                        <th class="order-item-total" scope="col">Total</th>-->
+<!--                    </tr>-->
+<!--                    <tr>-->
+<!--                        <th scope="row">1</th>-->
+<!--                        <td>Mark</td>-->
+<!--                        <td>Otto</td>-->
+<!--                        <td>Japan</td>-->
+<!--                        <td>GDSE</td>-->
+<!--                    </tr>-->
+<!--                    <tr>-->
+<!--                        <th scope="row">2</th>-->
+<!--                        <td>Jacob</td>-->
+<!--                        <td>Thornton</td>-->
+<!--                        <td>Australia</td>-->
+<!--                        <td>DEP</td>-->
+<!--                    </tr>-->
+<!--                    <tr>-->
+<!--                        <th scope="row">3</th>-->
+<!--                        <td >Larry </td>-->
+<!--                        <td >Bird </td>-->
+<!--                        <td>Italic</td>-->
+<!--                        <td>GDSE</td>-->
+<!--                    </tr>-->
+<!--                    </thead>-->
+<!--                    <tbody id="cart_body">-->
+<!--                    </tbody>-->
+<!--                </table>-->
+<!--            </div>-->
+<!--            <br>-->
+<!--            <div class="btns">-->
+<!--                <h2 id="total">Total:Rs&nbsp;<span id="total_price">0.00</span></h2>-->
+<!--                <button class="btn btn-primary" id="btn_place_order">Place Order</button>-->
+<!--            </div>-->
+<!--            <br><br>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+<!--</section>-->
+<!--<script src="../assets/bootstrap/js/bootstrap.min.js"></script>-->
+
+<!--</body>-->
+<!--</html>-->
