@@ -85,6 +85,12 @@ form>div>input{
     height: fit-content;
     position: absolute;
 }
+#search1{
+    position: absolute;
+    top: 10vh;
+    left: 65vh;
+}
+
 
 
 
